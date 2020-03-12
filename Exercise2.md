@@ -71,7 +71,32 @@ Call this function with the sequence "AAAAAT". Verify that you get the same outp
 # Exercise 2d
 We now want to read the whole E. coli genome sequence and compute the probability at every position in the genome. This way we can predict where promoters are likely to occur.
 
-The E. coli fasta sequence can be found 
+The E. coli fasta sequence can be [downloaded here](https://github.com/ivargr/bios3010-python/raw/master/ecoli.fasta). The first line is a header line, and the full sequence is on the rest of the lines.
+
+Write a function `read_fasta` that takes a file name as argument and returns the sequence in the fasta file (assuming the fasta file only has one header line and one sequence spread out on the rest of the lines).
+
+You will need to iterate the lines and merge all the sequences. Remember to strip each line so that you don't get line breaks.
+
+# Exercise 2e
+Call the `read_fasta` function with `ecoli.fasta` as input parameter. How long is the E. coli sequence?
+
+# Exercise 2f
+Write a function that computes the probability of every 6 base pair long sequence in a genome sequence. Your function should take a profile matrix and a genome sequence as input, and return a list of probabilities.
+
+Note: For every position in the genome you will need to get the 6 nucleotides starting at that position. You will not be able to compute the probability for subsequences closer than 6 base pairs to the end of the genome.
+Remember that you can get a 6 base pair long subsequence at position `i` like this: `genome_sequence[i:i+6]`.
+
+Call your function with the E. coli sequence and the profile you have used in the previous exercises.
+
+Create a for-loop that goes through all the probabilities that are returned and count how many of the probabilites are above 5%.
+
+# Exercise 2g
+We want to also run the analysis in 2f on the COVID-19 genome sequence, which you [will find here](https://raw.githubusercontent.com/ivargr/bios3010-python/master/covid-19.fasta).
+
+Since you have structured your program with functions, that should be easy to do. 
+
+How many positions give more than 5% in the COVID-19 genome? Is this high or low compared to the E. coli genome? What if you divide those numbers by the genome sizes? 
+Are you able to explain the differences from a biological perspective?
 
 
 
