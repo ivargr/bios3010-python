@@ -44,7 +44,7 @@ Bonus task: The if-sentence is a bit clumsy. Do you know a way to make it more c
 
 
 # Exercise 1e
-GC-content is the ratio of number of `G`s and `C`s in a DNA sequence. For instance, theC-content of 50%.
+GC-content is the ratio of number of `G`s and `C`s in a DNA sequence. For instance, the GC-content of `ACTG` is 50%.
 
 Write a function that takes a sequence as input and returns the GC-content. Test the function with a few sequence sequence ACTG has a Gs of your choice.
 
