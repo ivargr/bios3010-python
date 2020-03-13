@@ -1,5 +1,5 @@
 # Exercise 1: The basics
-Skip this exercise if you feel comfortable coding in Python. This exercise is meant a repetition of the Python learned in BIOS1100.
+Skip this exercise and jump to Exercise 2 if you feel comfortable coding in Python. This exercise is meant a repetition of the Python learned in BIOS1100.
 
 Try to solve everything first before looking at the solution. If you are stuck, have a look at the slides or other material online.
 
@@ -21,9 +21,10 @@ T = 5
 
 # Exercise 1c
 Now create a function that takes four arguments, A, C, G, and T and returns the melting temperature. 
-The name of your function should be `compute_meting_temperature`.
+The name of your function should be `compute_melting_temperature`.
 
-Call your functions with the values for A, C, G, and T given in the previous exercise, print the return value and make sure you get the same melting temperature in the previous exercise.
+Call your functions with the values for A, C, G, and T given in the previous exercise, print the return value and make sure you get the same
+ melting temperature as in the previous exercise.
 
 # Exercise 1d
 The following function is supposed to return True if a DNA sequence is valid DNA and False if not. There is something wrong this code. Find the error and make the code work.
@@ -31,22 +32,31 @@ If you find this difficult, try testing the code with a few sequences, and inser
 ```python
 def sequence_is_valid_dna(sequence):
     for base in sequence:
-        if base is not "A" or base is not "C" or base is not "G" or base is not "T" or base is not "N":
+        if base is not "A" and base is not "C" and base is not "G" and base is not "T" and base is not "N":
             return False
             
         return True
 
 ``` 
-PS: We allow A, C, T, G and N (since N is used to denote unknown nucleotide).
+PS: We allow A, C, T, G and N (since N is commonly used to denote unknown nucleotide).
 
 Bonus task: The if-sentence is a bit clumsy. Do you know a way to make it more concise? Hint: Lists
 
 
 # Exercise 1e
+GC-content is the ratio of number of `G`s and `C`s in a DNA sequence. For instance, theC-content of 50%.
+
+Write a function that takes a sequence as input and returns the GC-content. Test the function with a few sequence sequence ACTG has a Gs of your choice.
 
 
-# Exercise 1d
-GC-content is the ratio of number of `G`s and `C`s in a DNA sequence.
+# Exercise 1f
+In this exercise you will write a small program that reads a BED file.
 
+First, [download this file](https://raw.githubusercontent.com/uio-bmi/statistical_genomics_exercises/master/open_chromatin_chr6.bed) which is a BED file
+with open chromatin regions on chromosome 6 in human (regions with accessible DNA). The second column is the start position and the thrid column is the end position.
+
+Write a Python program that reads this file, and prints the start and end position of all regions that are larger than5 000 base pairs.
+
+How many such regions are there?
 
 
