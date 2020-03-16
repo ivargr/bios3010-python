@@ -8,7 +8,29 @@ Try to solve everything first before looking at the solution. If you are stuck, 
 * Write Python codes that prints these two sequences joined together (the sequence `ACTGTCCG` should be printed)
 * What is the length of the resulting sequence? Write Python code that prints the length of the resulting sequence.
 
+
 ## Exercise 1b
+What gets printed in the following program?
+```python
+a = 5
+a += 10
+
+if a < 15:
+    print("Hi")
+elif a + 10 > 100:
+    print("Hello")
+elif "ACTG" in "AAACTGGGG":
+    if a / 3 == 5:
+        print("Hi")
+    elif a < 15:
+        print("Hei")
+else:
+    print("Heisann")
+
+```
+
+
+## Exercise 1c
 The formula for DNA melting temperature is `4(G+C) + 2(A+T)` where G, C, A and T are the number of times the bases occur in the sequence.
 Assume you start with the following code, add a line that computes the melting temperature and another line that pints the melting temperature:
 ```python
