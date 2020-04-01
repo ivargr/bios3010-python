@@ -23,7 +23,7 @@ How many G's are there in the sequence? (Remember that you can count the number 
 ## Exercise 2c
 From the lectures in week 11, you might noticed that the sequence `TATAAT` is commoon in promotor regions in the E. coli genome.
 
-We want to find all position in the E. coli genome where the sequence TaTAAT is found.
+We want to find all position in the E. coli genome where the sequence TATAAT is found.
 
 A simple way of doing this in Python is to iterate over every base pair in the genome using a for-loop, picking out the 6 base pair long subsequence from that position,
 and checking whether that subsequence is identical to TATAAT.
