@@ -6,7 +6,7 @@ print(some_value)
 
 if a == 6:
     print("5 is 6")
-elif some_value:
+elif some_value == 7:
     print("5 is 7")
 elif True:
     if len("ACTG") == 4:
